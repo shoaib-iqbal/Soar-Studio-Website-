@@ -60,38 +60,18 @@
             <span>Installs as a <strong>theme app embed</strong></span>
           </div>
         </div>
-        <div class="app-hero-mock">
-          <header class="appcard-head">
-            <div class="appicon appicon-dark">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h12l2-9H6"/></svg>
+        <div class="sc-hero-visual" aria-hidden="true">
+          <div class="sc-glow"></div>
+          <div class="phone phone-tilt">
+            <div class="phone-screen">
+              <div class="phone-status"><span>9:41</span><span class="phone-island"></span><span class="phone-icons"><i></i><i></i><i></i></span></div>
+              <img src="screens/smartcart/drawer-3-choose-gift.webp" alt="" width="600" height="1300" />
             </div>
-            <div>
-              <h3>SmartCart</h3>
-              <p>Slide Cart Drawer &amp; Rewards</p>
-            </div>
-          </header>
-          <div class="cart-widget" style="max-width: none; margin: 16px 0 0;">
-            <header class="cart-head">
-              <strong>Your bag (2)</strong>
-              <button aria-label="Close" class="cart-x">×</button>
-            </header>
-            <p class="cart-free">You're $24 away from Free Shipping</p>
-            <div class="cart-progress"><span style="width:76%"></span></div>
-            <ul class="cart-items">
-              <li>
-                <div class="cart-thumb">🧴</div>
-                <div class="cart-item-info"><strong>Insulated Mug</strong><span>$34.00</span></div>
-                <div class="qty">− 1 +</div>
-              </li>
-              <li>
-                <div class="cart-thumb">🧢</div>
-                <div class="cart-item-info"><strong>Trail Hat</strong><span>$42.00</span></div>
-                <div class="qty">− 1 +</div>
-              </li>
-            </ul>
-            <button class="cart-checkout">Checkout securely <span class="arrow">→</span></button>
           </div>
+          <div class="sc-chip sc-chip-a"><span class="sc-chip-dot">✓</span><div><strong>Free shipping unlocked</strong><small>Cart reached $150</small></div></div>
+          <div class="sc-chip sc-chip-b"><span class="sc-chip-dot sc-chip-dot-lime">🎁</span><div><strong>Choose your free gift</strong><small>$80.06 away from Gift Box</small></div></div>
         </div>
+      
       </div>
     </section>
 
@@ -131,6 +111,153 @@
             <h3>Urgency, low stock &amp; NEW badges</h3>
             <p>"Your items aren't reserved", "Only 2 left, order soon" for low-stock products, and NEW badges by tag or date added.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-show" id="see-it">
+      <div class="container">
+        <div class="sc-show-head">
+          <p class="eyebrow">See it in action</p>
+          <h2 class="section-title">One bar. <span class="hl hl-purple">Up to three rewards.</span></h2>
+          <p class="sc-show-lede">Real screenshots from our demo store. Click a cart total to see what shoppers see.</p>
+          <ul class="sc-legend" aria-label="Reward tiers on the demo store">
+            <li><span class="sc-legend-ico">🚚</span>Free Shipping <b>$150</b></li>
+            <li><span class="sc-legend-ico">🎁</span>Free Gift <b>$250</b></li>
+            <li><span class="sc-legend-ico">📦</span>Gift Box <b>$350</b></li>
+          </ul>
+        </div>
+        <div class="sc-tiers">
+          <div class="sc-steps" role="tablist" aria-label="Cart totals">
+            <button class="sc-step is-active" role="tab" id="sc-tab-0" aria-selected="true" aria-controls="sc-stage" data-step="0">
+              <span class="sc-step-amt">$97.97</span>
+              <span class="sc-step-copy"><strong>Shoppers see the next reward</strong><span>“You are $52.03 away from Free Shipping!”</span></span>
+              <span class="sc-step-timer" aria-hidden="true"></span>
+            </button>
+            <button class="sc-step" role="tab" id="sc-tab-1" aria-selected="false" aria-controls="sc-stage" data-step="1">
+              <span class="sc-step-amt">$179.95</span>
+              <span class="sc-step-copy"><strong>Free shipping unlocked</strong><span>The first icon lights up and the bar points to the free gift.</span></span>
+              <span class="sc-step-timer" aria-hidden="true"></span>
+            </button>
+            <button class="sc-step" role="tab" id="sc-tab-2" aria-selected="false" aria-controls="sc-stage" data-step="2">
+              <span class="sc-step-amt">$269.94</span>
+              <span class="sc-step-copy"><strong>They choose a free gift</strong><span>A gift picker appears in the drawer, with your gifts at $0.00.</span></span>
+              <span class="sc-step-timer" aria-hidden="true"></span>
+            </button>
+            <button class="sc-step" role="tab" id="sc-tab-3" aria-selected="false" aria-controls="sc-stage" data-step="3">
+              <span class="sc-step-amt">$372.91</span>
+              <span class="sc-step-copy"><strong>All rewards unlocked</strong><span>The gift box is added automatically, and both gifts are free.</span></span>
+              <span class="sc-step-timer" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="sc-stage" id="sc-stage" role="tabpanel" aria-live="polite">
+            <div class="sc-glow"></div>
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-status"><span>9:41</span><span class="phone-island"></span><span class="phone-icons"><i></i><i></i><i></i></span></div>
+                <div class="sc-stage-imgs">
+                <img src="screens/smartcart/drawer-1-progress.webp" alt="Reward bar at $97.97, $52.03 away from Free Shipping" width="600" height="1300" class="is-active"  />
+                <img src="screens/smartcart/drawer-2-free-shipping.webp" alt="Reward bar with Free Shipping unlocked" width="600" height="1300" class="" loading="lazy" />
+                <img src="screens/smartcart/drawer-3-choose-gift.webp" alt="Gift picker in the cart drawer" width="600" height="1300" class="" loading="lazy" />
+                <img src="screens/smartcart/drawer-4-all-unlocked.webp" alt="All three rewards unlocked with two free gifts in the cart" width="600" height="1300" class="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light sc-journey">
+      <div class="container">
+        <div class="sc-show-head">
+          <p class="eyebrow">From cart to checkout</p>
+          <h2 class="section-title">Works on every step <span class="hl hl-purple">of the order.</span></h2>
+        </div>
+
+        <div class="sc-row">
+          <div class="sc-row-copy">
+            <span class="sc-kicker">On your store</span>
+            <h3>The cart opens right on the page.</h3>
+            <p>The drawer slides out when a product is added or the cart icon is clicked, so shoppers keep browsing instead of loading a cart page.</p>
+            <ul class="sc-checks">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Change quantities and remove items in the drawer</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Add-on suggestions under the cart</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Your texts, colours and payment icons</li>
+            </ul>
+          </div>
+          <div class="sc-row-media sc-media-wide">
+            <div class="sc-glow sc-glow-soft"></div>
+            <div class="browser ">
+              <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">your-store.com/collections/all</span></div>
+              <img src="screens/smartcart/store-all-unlocked.webp" alt="SmartCart drawer open over a store page with all rewards unlocked" width="1600" height="1000" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <div class="sc-row sc-row-rev">
+          <div class="sc-row-copy">
+            <span class="sc-kicker">In the drawer</span>
+            <h3>Discount codes and a wishlist, built in.</h3>
+            <p>Shoppers apply and remove codes without leaving the drawer, and the new total shows straight away.</p>
+            <ul class="sc-checks">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works with codes set to combine with product and shipping discounts</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Wishlist built in, no extra app needed</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Wishlist saved in the shopper’s browser, no account needed</li>
+            </ul>
+          </div>
+          <div class="sc-row-media">
+            <div class="sc-glow sc-glow-lime"></div>
+            <div class="phone ">
+              <div class="phone-screen">
+                <div class="phone-status"><span>9:41</span><span class="phone-island"></span><span class="phone-icons"><i></i><i></i><i></i></span></div>
+                <img src="screens/smartcart/drawer-discount.webp" alt="Discount code TEST10 applied in the cart drawer, saving $17.99" width="600" height="1300" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc-row">
+          <div class="sc-row-copy">
+            <span class="sc-kicker">At checkout</span>
+            <h3>Gifts and shipping are free at checkout.</h3>
+            <p>On Growth, SmartCart adds a “SmartCart rewards” discount to your store. Once the cart reaches a tier, Shopify’s checkout shows the gift or shipping as FREE.</p>
+            <ul class="sc-checks">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gift items made free</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Cheapest shipping option made free</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Savings shown in the order summary</li>
+            </ul>
+          </div>
+          <div class="sc-row-media">
+            <div class="sc-glow"></div>
+            <div class="sc-card-shot">
+              <div class="sc-card-shot-head"><span class="sc-lock">🔒</span>Shopify checkout · Order summary</div>
+              <img src="screens/smartcart/checkout-summary.webp" alt="Shopify checkout order summary: Black Aluminium Cup FREE, Black Sun Glasses FREE, shipping FREE, total savings $35.98" width="910" height="1160" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <div class="sc-row sc-row-rev">
+          <div class="sc-row-copy">
+            <span class="sc-kicker">In your Shopify admin</span>
+            <h3>Set up your tiers in minutes.</h3>
+            <p>For each tier, pick the cart total, the reward and the label shown in the bar. No theme code to edit.</p>
+            <ul class="sc-checks">
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 3 tiers: free shipping, choose a gift, automatic gift</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 10 gift options for shoppers to choose from</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Keep lower rewards as the cart grows, or give only the highest</li>
+            </ul>
+          </div>
+          <div class="sc-row-media sc-media-wide sc-admin">
+            <div class="sc-glow sc-glow-soft"></div>
+            <div class="browser browser-crop">
+              <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">admin.shopify.com · SmartCart · Rewards</span></div>
+              <img src="screens/smartcart/admin-rewards.webp" alt="SmartCart Rewards settings with three tiers" width="998" height="1271" loading="lazy" />
+            </div>
+            <figure class="sc-float">
+              <img src="screens/smartcart/admin-home.webp" alt="SmartCart home page: SmartCart is live on your store, plan Growth" width="995" height="560" loading="lazy" />
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -314,5 +441,26 @@
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+  (function () {
+    var tabs = document.querySelectorAll('.sc-step');
+    var imgs = document.querySelectorAll('.sc-stage-imgs img');
+    if (!tabs.length) return;
+    var cur = 0, timer = null, wrap = document.querySelector('.sc-tiers');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function show(i) {
+      cur = i;
+      tabs.forEach(function (t, j) { t.classList.toggle('is-active', j === i); t.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+      imgs.forEach(function (im, j) { im.classList.toggle('is-active', j === i); });
+    }
+    function start() { if (reduce) return; stop(); wrap.classList.add('is-playing'); timer = setInterval(function () { show((cur + 1) % tabs.length); }, 4000); }
+    function stop() { clearInterval(timer); timer = null; wrap.classList.remove('is-playing'); }
+    tabs.forEach(function (t, i) { t.addEventListener('click', function () { show(i); stop(); }); });
+    wrap.addEventListener('mouseenter', stop);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { e[0].isIntersecting ? (timer || start()) : stop(); }, { threshold: 0.4 }).observe(wrap);
+    } else { start(); }
+  })();
+  </script>
 </body>
 </html>
