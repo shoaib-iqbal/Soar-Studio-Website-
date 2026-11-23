@@ -61,6 +61,10 @@
             <li><a href="#rewards-discount">Rewards discount</a></li>
             <li><a href="#combinations">Discount combinations</a></li>
           </ul>
+          <h4>Revenue</h4>
+          <ul>
+            <li><a href="#revenue">Revenue tracking</a></li>
+          </ul>
           <h4>Support</h4>
           <ul>
             <li><a href="#troubleshooting">Troubleshooting</a></li>
@@ -81,7 +85,7 @@
           <h2 id="plans">Plans</h2>
           <p>Both plans include a 7-day free trial and are billed through your Shopify invoice.</p>
           <ul>
-            <li><strong>Starter — $19.99/month</strong>: the cart drawer, free shipping progress bar, add-on suggestions, discount codes, wishlist, urgency notice, low-stock alerts, NEW badges, payment icons, and the drawer's text, button colour and bar colour settings.</li>
+            <li><strong>Starter — $19.99/month</strong>: the cart drawer, free shipping progress bar, add-on suggestions, revenue tracking for suggestions, discount codes, wishlist, urgency notice, low-stock alerts, NEW badges, payment icons, and the drawer's text, button colour and bar colour settings.</li>
             <li><strong>Growth — $49.99/month</strong>: everything in Starter, plus the tiered rewards bar with up to 3 rewards (free shipping, a gift the shopper chooses, an automatic gift), made free at checkout by the SmartCart rewards discount.</li>
           </ul>
           <p>To switch plans, open SmartCart in your Shopify admin and click <strong>Change plan</strong> under <strong>Your plan</strong>.</p>
@@ -89,7 +93,7 @@
           <h2 id="install">Install</h2>
           <ol>
             <li>Open <a href="https://apps.shopify.com/smartcart-3">SmartCart on the Shopify App Store</a> and click <strong>Install</strong>.</li>
-            <li>Approve the access SmartCart needs: read products and inventory (for add-ons, gifts and low-stock alerts), read themes (to check the drawer is switched on) and write discounts (for the rewards discount).</li>
+            <li>Approve the access SmartCart needs: read products and inventory (for add-ons, gifts and low-stock alerts), read themes (to check the drawer is switched on) and write discounts (for the rewards discount). Reading orders is optional and only asked when you turn on <a href="#revenue">revenue tracking</a>.</li>
             <li>Choose <strong>Starter</strong> or <strong>Growth</strong>. Your 7-day free trial starts.</li>
           </ol>
 
@@ -171,6 +175,23 @@
           <h2 id="combinations">Discount combinations</h2>
           <p>If a shopper uses a discount that doesn't combine with the rewards, Shopify applies it instead and gifts and shipping are charged. The Rewards page lists these discounts. To let them work together, open each one and under <strong>Combinations</strong> tick <strong>Product discounts</strong> and <strong>Shipping discounts</strong> (free shipping discounts only have Product discounts).</p>
 
+          <h2 id="revenue">Revenue tracking</h2>
+          <p>See how much money SmartCart's add-on suggestions earn you. Included in both plans.</p>
+          <ol>
+            <li>On SmartCart's home page, click <strong>Turn on revenue tracking</strong>.</li>
+            <li>Shopify asks you to allow SmartCart to read orders. Click <strong>Update</strong>.</li>
+            <li>The <strong>Revenue</strong> page opens. You can also find it in SmartCart's menu.</li>
+          </ol>
+          <p>The Revenue page shows sales from suggestions <strong>this month</strong> and <strong>all time</strong>, your <strong>top suggested products</strong> and <strong>recent orders</strong> with suggested items. Click an order number to open it in your admin.</p>
+          <ul>
+            <li><strong>Counted:</strong> products a shopper added from the drawer's suggestions and paid for, after discounts, in your store's currency. If the shopper raises the quantity in the drawer, all of it counts.</li>
+            <li><strong>Not counted:</strong> products added from the product page, orders that aren't paid, test orders, and orders from before you turned tracking on. Refunds aren't subtracted.</li>
+          </ul>
+          <div class="callout info">
+            <strong>Note:</strong> If a shopper adds the same product from a suggestion and from its product page, the bag shows it on two lines. Only the suggested line is counted. In the order, suggested lines show the property <code>_sc_upsell</code>.
+          </div>
+          <p>SmartCart saves only the order number, date, products, quantities and amounts, never customer details. See the <a href="https://smartcart.soar.studio/privacy">privacy policy</a>.</p>
+
           <h2 id="troubleshooting">Troubleshooting</h2>
           <h3>The drawer doesn't open</h3>
           <ol>
@@ -188,6 +209,13 @@
 
           <h3>No low-stock warning</h3>
           <p>The product must track inventory and stop selling when out of stock, and its stock must be at or below your warning level.</p>
+
+          <h3>The Revenue page shows $0.00</h3>
+          <ol>
+            <li>Check the order was paid and isn't a test order. Test orders, and all orders on development stores, aren't counted.</li>
+            <li>Check the product was added with <strong>Add</strong> on a suggestion in the drawer, not from its product page.</li>
+            <li>Only orders placed after you turned on revenue tracking are counted.</li>
+          </ol>
 
           <div class="callout warn">
             <strong>Still stuck?</strong> Email <a href="mailto:support@soar.studio">support@soar.studio</a> with your store URL.
