@@ -182,15 +182,24 @@
             <li>Shopify asks you to allow SmartCart to read orders. Click <strong>Update</strong>.</li>
             <li>The <strong>Revenue</strong> page opens. You can also find it in SmartCart's menu.</li>
           </ol>
-          <p>The Revenue page shows sales from suggestions <strong>this month</strong> and <strong>all time</strong>, your <strong>top suggested products</strong> and <strong>recent orders</strong> with suggested items. Click an order number to open it in your admin.</p>
+          <p>Pick a period at the top of the Revenue page: <strong>Today</strong> (by hour) or the <strong>last 7, 30 or 90 days</strong> (by day). The page shows, for that period:</p>
+          <ul>
+            <li><strong>Sales from suggestions</strong>, with the change from the period before, next to your <strong>all time</strong> total. This month's sales are also compared with what SmartCart costs.</li>
+            <li><strong>Sales over time</strong>: a chart of sales from suggestions.</li>
+            <li><strong>Orders with suggestions</strong>: how many paid orders include a suggested product, and the average order value with and without one (subtotal after discounts, before shipping and taxes).</li>
+            <li><strong>Suggestion funnel</strong>: how often suggestions were <strong>shown</strong> in the drawer, <strong>added</strong> from it and <strong>bought</strong>.</li>
+            <li><strong>Top suggested products</strong>, with how often each was shown, added and bought, and its sales.</li>
+            <li><strong>Recent orders</strong> with suggested items.</li>
+          </ul>
           <ul>
             <li><strong>Counted:</strong> products a shopper added from the drawer's suggestions and paid for, after discounts, in your store's currency. If the shopper raises the quantity in the drawer, all of it counts.</li>
             <li><strong>Not counted:</strong> products added from the product page, orders that aren't paid, test orders, and orders from before you turned tracking on. Refunds aren't subtracted.</li>
           </ul>
+          <p><strong>How the funnel counts:</strong> a suggestion is <strong>shown</strong> when at least half of it is on screen in the open drawer (once per product each time the drawer opens), and <strong>added</strong> when the shopper clicks <strong>Add</strong> on it. Shoppers who decline tracking in your cookie banner aren't counted as shown or added, so those numbers can be a little low. Order value and the funnel are counted from the day they were added to SmartCart (November 24, 2026), or from when you turned on tracking.</p>
           <div class="callout info">
             <strong>Note:</strong> If a shopper adds the same product from a suggestion and from its product page, the bag shows it on two lines. Only the suggested line is counted. In the order, suggested lines show the property <code>_sc_upsell</code>.
           </div>
-          <p>SmartCart saves only the order number, date, products, quantities and amounts, never customer details. See the <a href="https://smartcart.soar.studio/privacy">privacy policy</a>.</p>
+          <p>SmartCart saves only the order number, date, subtotal, products, quantities and amounts, and anonymous counts of suggestions shown and added, never customer details. See the <a href="https://smartcart.soar.studio/privacy">privacy policy</a>.</p>
 
           <h2 id="troubleshooting">Troubleshooting</h2>
           <h3>The drawer doesn't open</h3>
@@ -215,6 +224,13 @@
             <li>Check the order was paid and isn't a test order. Test orders, and all orders on development stores, aren't counted.</li>
             <li>Check the product was added with <strong>Add</strong> on a suggestion in the drawer, not from its product page.</li>
             <li>Only orders placed after you turned on revenue tracking are counted.</li>
+          </ol>
+
+          <h3>Shown and Added stay at 0</h3>
+          <ol>
+            <li>Open SmartCart's <strong>Revenue</strong> page once after turning on revenue tracking. This switches on the counting in your cart drawer.</li>
+            <li>Check add-on suggestions are switched on: <strong>Online Store → Themes → Customize → App embeds → SmartCart</strong>.</li>
+            <li>Shoppers who decline tracking in your cookie banner aren't counted. Accept it when you test your own store.</li>
           </ol>
 
           <div class="callout warn">
